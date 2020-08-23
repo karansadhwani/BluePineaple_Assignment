@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Regular Expression</title>
+
+    <script type="text/javascript">
+
+            function validate(){
+
+                    var username=document.getElementById("uname").value;
+                //    // var regx= /[sdp]imple/;       //simple,pimple,dimple
+                //     var regx=/[0-5]abc/;        //0-5 abc   
+                        var regx=/[^0-9]abc/;       //0-9 are excluded 
+
+
+                    if(regx.test(username)){
+                        //alert("Valid Username");
+                        document.getElementById("lbl").style.visibility="visible";
+                        document.getElementById("lbl").style.color="Green ";
+                        document.getElementById("lbl").innerHTML="Valid Username"; 
+                    }
+
+                    else{
+                       //  alert("Invalid usrname");
+                        document.getElementById("lbl").style.visibility="visible";
+                        document.getElementById("lbl").style.color="red ";
+                        document.getElementById("lbl").innerHTML="Invalid Username"; 
+                    }
+
+
+
+                    
+
+            }
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+<form >
+
+    <input id="uname" type="text" placeholder="Username"/><br>
+    <label id="lbl" style="color: red; visibility: hidden;">Invalid Username</label><br>
+
+    <button type="button" onclick="validate()">Submit</button>
+</form>
+
+
+    
+</body>
+</html>

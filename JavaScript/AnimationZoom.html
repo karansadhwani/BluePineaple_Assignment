@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+
+
+    <script type="text/javascript">
+    
+            var width=100;
+            var difference=2;
+            var intervalID=0;
+
+           // document.getElementById("img").style.width=width;
+
+
+            function increase(){
+                clearInterval(intervalID);
+                intervalID =  setInterval(zoomin,20);
+            }
+
+            function zoomin(){
+                if(width<200){
+                    width=width+difference;
+                    document.getElementById("img").style.width=width;
+
+                }
+
+                else{
+                    clearInterval(intervalID);
+                }
+            }
+
+
+            function decrease(){
+                clearInterval(intervalID);
+                intervalID =  setInterval(zoomout,20);
+            }
+
+            function zoomout(){
+                if(width>100){
+                    width=width+difference;
+                    document.getElementById("img").style.width=width;
+
+                }
+
+                else{
+                    clearInterval(intervalID);
+                }
+            }
+
+    
+    </script>
+
+</head>
+<body>
+
+    <br><br><br><br>
+    <img src="face.png" id="img" width="200" onmouseover="increase()" onmouseout="decrease()">
+    
+</body>
+</html>

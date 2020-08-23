@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Accordion Widget</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+   <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css">
+   <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+
+</head>
+<body>
+
+        <h3>Accordion Widget</h3>
+
+        <div id="panels">
+            <h3>TATA SONS</h3>
+            <p><b>Tata sons</b> is the largest Indian Company and it is Lead by the World's Great BusinessMan , Ratan Tata </p>
+            
+            <h3>RELIANCE INDUSTRIES</h3>
+            <p>Reliance Industries is the Indian Giant Tech Company which is owned by the one and only Mota Bhai, Mukesh Ambani </p>
+            
+            <h3>D-MART RETAIL</h3>
+            <p>Radhakishan Damani, The investor and the BusinessMan which started the Retial Business which offers Huge Discounts to Public </p>
+
+
+        </div>
+
+
+</body>
+
+
+<script src="js/jquery.js" type="text/javascript"></script>          
+<script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+
+<script>
+
+        $("#panels").accordion({
+                collapsible:true,
+                event:"click",
+                animate:300,
+                heightStyle:true,
+                icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+        });
+
+</script>
+
+</html>

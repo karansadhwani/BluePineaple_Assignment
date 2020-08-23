@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons</title>
+
+    <script type="text/javascript">
+
+        function func(){
+            var rd1= document.getElementById("ip1");
+            var rd2= document.getElementById("ip2");
+        
+        
+            if(rd1.checked==true){
+
+                alert("The channel selected is : "+rd1.value);
+            }
+            else if(rd2.checked==true){
+                
+                alert("The channell selected is : "+rd2.value);
+                    
+            }
+
+            else {
+                
+                alert(" No channel selected ");
+            
+            }
+        }
+
+
+
+    </script>
+
+
+</head>
+<body>
+    <h2>Best Web Series</h2>
+    <input id="ip1" name="grp1" type="radio" value="Sacred">Sacred Games</input>
+    <br>
+    <input id="ip2" name="grp1" type="radio" value="Mirzapur">Mirzapur </input>
+    <br>
+    <button id="button" onclick="func()">Submit</button>
+
+
+
+</body>
+</html>

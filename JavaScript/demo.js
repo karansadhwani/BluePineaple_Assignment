@@ -1,0 +1,1 @@
+document.write("<h1>Hellllooooo world</h1>");

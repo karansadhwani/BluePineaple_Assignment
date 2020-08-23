@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Autocomplete</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+   <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css">
+   <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+
+</head>
+<body>
+<h3>AutoComplete Widget</h3>
+
+<div id="mydiv">
+        <label><b>Enter Your Favourite Stock : </b></label>
+        <input type="text" id="stock">
+</div>
+
+
+</body>
+
+
+<script src="js/jquery.js" type="text/javascript"></script>          
+<script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+
+<script>
+
+    var stocks =["Tata Steel","Reliance Industries","D-Mart","IndusInd Bank","Kotak Mahindra Bank","ICICI Bank","HDFC Bank","Axis Bank","SBI Bank",
+                   "ITC Company","IDFC First Bank","TCS","Infosys","Tech Mahindra","AB Capital","Bajaj Finance","Bajaj Finserv","Tata Power","IRCTC","Affle","SBI Life Insurance","HDFC Life" ];
+
+        $("#stock").autocomplete(
+
+            {source:stocks},
+
+            {autoFocus:true,
+             delay:0,
+             minLenght:1   
+            }
+            );
+
+</script>
+
+</html>

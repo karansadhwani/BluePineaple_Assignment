@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Mani</title>
+</head>
+<body>
+    
+    <h2>DOM Manipulations</h2>
+    <button id="btn1" class="mydiv">Set Value</button>
+
+    <button id="btn2" class="mydiv">Get Value</button>
+
+
+    <div id="div" class="mydiv">
+
+        <p id="p1" class="mydiv" value="hello world">This is a <b>Para</b> in <i>second</i> Div</p>
+
+
+    </div>
+
+</body>
+
+
+<script src="js/jquery.js" type="text/javascript"></script>
+
+<script>
+
+    $(document).ready(function(){
+
+        $("#btn2").click(function(){
+
+            alert($("#p1").text());
+
+        });
+
+      
+
+        $("#btn1").click(function(){
+
+            $("#p1").text("This is new Para");
+            alert("Value has Upgraded");
+        });
+
+      
+
+    });
+
+
+
+</script>
+
+</html>

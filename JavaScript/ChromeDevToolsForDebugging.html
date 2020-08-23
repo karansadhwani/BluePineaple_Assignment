@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Debug</title>
+
+
+    <script type="text/javascript">
+
+                function addValue(){
+                        var a=document.getElementById("text1").value;
+                        var b=document.getElementById("text2").value;
+                        document.getElementById("result").innerHTML="Result = "+(ab);   //here + is missing so we can know this error at console 
+                      //  console.log(a+b);
+
+                }
+
+
+    </script>
+
+
+
+</head>
+<body>
+    
+    <input id="text1" type="number" placeholder="Text 1 here">
+    <br><br>
+    <input id="text2" type="number" placeholder="Text 2 here">
+    <br><br>
+    <button onclick="addValue()" id="btn" type="button">Result</button>
+
+    <h2 id="result"></h2>
+    
+
+
+</body>
+</html>

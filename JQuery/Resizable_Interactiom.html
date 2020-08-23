@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>ReSizable Feature</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+   <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css">
+   <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+
+</head>
+<body>
+
+        <h3>Resizable Feature</h3>
+
+            <div id="mydiv">
+      
+                    <img id="myimg" src="tata.png" width="200" >
+
+            </div>
+
+
+</body>
+
+
+<script src="js/jquery.js" type="text/javascript"></script>          
+<script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+
+
+        <script>
+
+                $("#myimg").resizable({
+                    ghost:true,
+                    aspectRatio:true,
+                    autoHide:true
+                });
+
+        </script>
+
+
+</html>

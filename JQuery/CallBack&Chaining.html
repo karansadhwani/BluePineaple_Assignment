@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Call Back & Chaining</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<h2 class="myhead">Call Back & Chaining</h2>
+<button id="btn">Toggle</button>
+
+        <div id="first" class="mydiv">
+              <p>This is first para in first div</p>
+             <p>This is second para in first div</p>
+
+        </div>
+
+        <div id="second" class="mydiv">
+              <p>This is third para in second div</p>
+        </div>
+
+
+
+</body>
+
+
+  <script src="js/jquery.js" type="text/javascript"></script>
+<script>
+
+
+    $(document).ready(function(){       //It will make sure that the functions are performed after the page loads fully
+
+     
+            $("#btn").click(function(){
+    
+                     $("#first").fadeToggle(5000, function(){       //first toggling will be done completely then alert msg will be alerted.
+
+                        alert("Division is fadded");
+                     });
+                    
+                    
+                    
+            });
+
+
+
+});
+
+      
+ 
+
+
+
+
+
+  </script>
+
+
+
+
+</html>

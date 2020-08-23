@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Events JQuery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<h2 class="myhead">Events</h2>
+
+        <div id="first" class="mydiv">
+              <p>This is first para in first div</p>
+             <p>This is second para in first div</p>
+
+        </div>
+
+        <div id="second" class="mydiv">
+              <p>This is third para in second div</p>
+        </div>
+
+         <div id="third" class="mydiv" >
+             <ul>
+                 <li>item 1</li>
+                 <li>item 2</li>
+                 <li>item 3</li>
+                <li>item 4</li>
+             </ul>
+         </div>
+
+  <button id="btn" type="button" >Click Me 1</button>
+  <button id="btn2" type="button" >Click Me 2</button>
+
+
+</body>
+
+
+  <script src="js/jquery.js" type="text/javascript"></script>
+<script>
+
+
+    $(document).ready(function(){       //It will make sure that the functions are performed after the page loads fully
+
+   
+
+    $("#btn").click(function func(){        //Click function defined in the Document ready function 
+                
+                // $("#head").fadeToggle();        //$(#head) :- accessing ID's
+                 $("#first,p").fadeToggle(500);
+        
+    });
+});
+
+      
+ 
+                                                //$(".abc") :- accessing abc class
+                                                //$("h2") eqvivalent :- document.getElementByID("h2");
+
+
+
+
+
+  </script>
+
+
+
+
+</html>
