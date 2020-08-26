@@ -1,0 +1,29 @@
+//BUFFERS
+
+
+        //Temporary storage spot for a chunk of data
+        //buffer is filled with data , then passed along
+        // transfers small chunk of data at a time
+
+//STREAMS
+
+        //can create streams in Node.js to transfer data
+        // increase performance
+
+
+// WRITABLE STREAM
+            
+            // allows node js to write data to a stream
+
+
+// READABLE STREAM
+
+            // allow node js to read data from  a stream
+
+// DUPLEX
+
+            // can read and write to a stream
+            
+
+
+
