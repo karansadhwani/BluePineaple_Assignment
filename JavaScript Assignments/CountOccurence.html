@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Occurence</title>
+
+
+    <script type="text/javascript">
+    
+            function count(){
+                
+                
+                    var flag=Boolean;
+                    var str= document.getElementById("str").value;
+                    var str= str.toUpperCase();
+
+                    for(var i=0;i<str.length;i++){
+
+                        var count=0;
+                        flag=true; 
+
+
+                            for(var j=0;j<str.length;j++){
+
+                             var k=i;
+                            
+                                     if(str[k]==str[k+1]){
+                                             flag=false;
+                                      }
+
+
+
+                                    if(str[i] == str[j]){
+                                        count++;
+                                    }
+
+
+                            }
+                            
+                        if(flag == true){
+                            document.getElementById("op").innerHTML=document.getElementById("op").innerHTML+"\nCount of "+str[i]+" is "+count;
+                            document.getElementById("op").style.visibility="visible";
+                        }    
+                    }
+
+            }
+    
+    
+    
+    </script>
+
+
+
+</head>
+<body>
+    
+
+    <h1>Count the number of Occurence</h1>
+
+    <input type="text" id="str" placeholder="Enter String here">
+    <br><br>
+    <button id="btn" type="button" onclick="count()">Count</button>
+    <br><br>
+    <textarea id="op" cols="50" rows="10" style="visibility: hidden; color: green;">result</textarea>
+    
+
+</body>
+</html>

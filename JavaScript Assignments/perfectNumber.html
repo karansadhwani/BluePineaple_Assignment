@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Numbers</title>
+
+    <script type="text/javascript">
+    
+    
+            function perfect(){
+
+                    var perfnum=0;
+
+                    var number=document.getElementById("num").value;
+
+                   // document.write(number);
+
+                    for(var i=0; i<=number/2; i++){
+
+                        if(number%i === 0){
+                            perfnum +=i;
+                        }
+
+                    }
+
+                    if(perfnum == number){
+                        document.getElementById("output").innerHTML="The Number is PERFECT NUMBER !";
+                        document.getElementById("output").style.visibility="visible";
+                        document.getElementById("output").style.color="green";
+                    }
+                    else{
+                        document.getElementById("output").innerHTML="The Number is NOT PERFECT NUMBER !";
+                        document.getElementById("output").style.visibility="visible";
+                        document.getElementById("output").style.color="red";
+                    }
+            }
+
+
+    </script>
+
+
+</head>
+<body>
+    
+    <h1>Check whether the Number is <b>PERFECT NUMBER</b></h1>
+
+    <input type="number" id="num" placeholder="Enter your Number here"></input>
+    <br><br>
+    <button id="btn" onclick="perfect()">Check</button>
+    <br><br>
+    <label id="output" type="button" onclick="perfect()" style="visibility: hidden;color: green;">res</label>
+</body>
+</html>
