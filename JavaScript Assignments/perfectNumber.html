@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Numbers</title>
+    <link rel="stylesheet" type="text/css"/>
+
+    <style>
+
+        #divid{
+            text-align: center;
+            margin-top: 90px;
+            background-color: lightcyan;
+        }
+
+        #output{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+
+
+     </style>   
+
+
 
     <script type="text/javascript">
     
@@ -25,12 +44,12 @@
                     }
 
                     if(perfnum == number){
-                        document.getElementById("output").innerHTML="The Number is PERFECT NUMBER !";
+                        document.getElementById("output").innerHTML="Result : The Number is PERFECT NUMBER !";
                         document.getElementById("output").style.visibility="visible";
                         document.getElementById("output").style.color="green";
                     }
                     else{
-                        document.getElementById("output").innerHTML="The Number is NOT PERFECT NUMBER !";
+                        document.getElementById("output").innerHTML="Result : The Number is NOT PERFECT NUMBER !";
                         document.getElementById("output").style.visibility="visible";
                         document.getElementById("output").style.color="red";
                     }
@@ -42,7 +61,7 @@
 
 </head>
 <body>
-    
+    <div id="divid">
     <h1>Check whether the Number is <b>PERFECT NUMBER</b></h1>
 
     <input type="number" id="num" placeholder="Enter your Number here"></input>
@@ -50,5 +69,7 @@
     <button id="btn" onclick="perfect()">Check</button>
     <br><br>
     <label id="output" type="button" onclick="perfect()" style="visibility: hidden;color: green;">res</label>
+</div>
+
 </body>
 </html>

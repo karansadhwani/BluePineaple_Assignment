@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Count Occurence</title>
+    <link rel="stylesheet" type="text/css"/>
+
+    <style>
+
+        #divid{
+            text-align: center;
+            margin-top: 90px;
+            background-color: lightcyan;
+        }
+
+        #op{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: larger;
+
+        }
+
+     </style>   
 
 
     <script type="text/javascript">
+
+
+    
     
             function count(){
                 
@@ -50,20 +71,18 @@
     
     </script>
 
-
-
 </head>
 <body>
-    
 
+    <div id="divid">
     <h1>Count the number of Occurence</h1>
 
     <input type="text" id="str" placeholder="Enter String here">
     <br><br>
     <button id="btn" type="button" onclick="count()">Count</button>
     <br><br>
-    <textarea id="op" cols="50" rows="10" style="visibility: hidden; color: green;">result</textarea>
-    
+    <textarea id="op" cols="20" rows="8" style="visibility: hidden; color: green;">Result :- </textarea>
+</div>
 
 </body>
 </html>
